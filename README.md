@@ -912,6 +912,8 @@ This repo is also a Claude Code plugin called `dx` (developer experience). It bu
 | `/dx:half-clone` | Half-clone to reduce context (Tip 21) |
 | `/dx:reddit-fetch` | Fetch Reddit content via Reddit's JSON API |
 | `/dx:review-claudemd` | Review conversations to improve CLAUDE.md files (Tip 28) |
+| `/dx:hn-summarize` | Summarize Hacker News top stories, articles, and comment threads |
+| `/dx:version-check` | Recommend which Claude Code version to run, or whether to update |
 
 **Install with two commands:**
 
