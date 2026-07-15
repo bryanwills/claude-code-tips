@@ -648,7 +648,7 @@ Skills and slash commands are pretty similar in the way they function. The diffe
 
 **Plugins** are a way to package skills, slash commands, agents, hooks, and MCP servers together. But a plugin doesn't have to use all of them. Anthropic's official `frontend-design` plugin is essentially just a skill and nothing else. It could be distributed as a standalone skill, but the plugin format makes it easier to install.
 
-For example, I built a plugin called `dx` that bundles slash commands and skills from this repo together. You can see how it works in the [Install the dx plugin](#tip-43-install-the-dx-plugin) section.
+For example, I built a plugin called `dx` that bundles skills from this repo together. You can see how it works in the [Install the dx plugin](#tip-43-install-the-dx-plugin) section.
 
 ## Tip 24: Interactive PR reviews
 
@@ -929,7 +929,7 @@ The script shows you everything it will configure and lets you skip any items:
 
 ```
 INSTALLS:
-  1. DX plugin - slash commands (/dx:gha, /dx:handoff) and skills (reddit-fetch)
+  1. DX plugin - skills like /dx:gha, /dx:handoff, and reddit-fetch
 
 SETTINGS (~/.claude/settings.json):
   2. Status line - shows model, git branch, uncommitted files, token usage at bottom of screen
