@@ -575,7 +575,7 @@ Or install via the [dx plugin](#tip-44-install-the-dx-plugin) - no symlinks need
 
 ### Auto-suggest half-clone with a hook
 
-Optionally, you can use a [hook](https://docs.anthropic.com/en/docs/claude-code/hooks) to automatically trigger `/half-clone` when your context gets too long. The [check-context script](scripts/check-context.sh) runs after every Claude response and checks context usage. If it's over 85%, it tells Claude to run `/half-clone`, which creates a new conversation with only the later half so a new agent can continue there.
+Optionally, you can use a [hook](https://code.claude.com/docs/en/hooks) to automatically trigger `/half-clone` when your context gets too long. The [check-context script](scripts/check-context.sh) runs after every Claude response and checks context usage. If it's over 85%, it tells Claude to run `/half-clone`, which creates a new conversation with only the later half so a new agent can continue there.
 
 To set it up, first copy the script:
 ```bash
@@ -811,7 +811,7 @@ Claude Code's input box is designed to emulate common terminal/readline shortcut
 - `Ctrl+W` - Delete the previous word
 - `Ctrl+U` - Delete from cursor to beginning of line
 - `Ctrl+K` - Delete from cursor to end of line
-- `Ctrl+C` / `Ctrl+L` - Clear the current input
+- `Ctrl+C` - Clear the current input
 - `Ctrl+G` - Open your prompt in an external editor (useful for pasting long text, since pasting directly into the terminal can be slow)
 
 If you're familiar with bash, zsh, or other shells, you'll feel right at home.
