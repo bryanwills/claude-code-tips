@@ -58,6 +58,7 @@ Here are my tips for getting the most out of Claude Code, including a custom sta
 - [Tip 46: Switch between multiple Claude accounts](#tip-46-switch-between-multiple-claude-accounts)
 - [Tip 47: Use GitHub as your knowledge base](#tip-47-use-github-as-your-knowledge-base)
 - [Tip 48: Learn to review code through a TESTING.md document](#tip-48-learn-to-review-code-through-a-testingmd-document)
+- [Tip 49: Turn on the concise output style](#tip-49-turn-on-the-concise-output-style)
 
 <!-- /TOC -->
 
@@ -1022,6 +1023,14 @@ When you need to review a large amount of code (Claude Code generated code, a PR
 What I recommend is to have Claude Code test everything in the given code thoroughly, let it document how it tested and verified everything in a TESTING.md document, and review that document manually instead. You can go back and forth on it to get a good format for you to review. If it's too long, ask it to make it shorter. If it's too short, ask for more information. If it has jargon you don't understand, ask it to explain or simplify.
 
 Here is a real example: [TESTING.md](TESTING.md) from this repo. It started with the review of one external PR, where Claude Code reproduced the bug on a real Windows runner in GitHub Actions, verified the fix, and summarized everything it tested. Now it's a running log that we keep updating with each review. Tracking it in git this way gives you a record of how everything has been tested. If someone asks, how do you know if something works as intended, then you can just point them to this document.
+
+## Tip 49: Turn on the concise output style
+
+Set Claude Code's output style to Concise: run `/config`, go to **Output style**, and pick **Concise** (or set `"outputStyle": "Concise"` in `~/.claude/settings.json`; requires v2.1.237 or later).
+
+Before I switched this on, Claude would sometimes ramble about something and I'd have to say "you're talking too much, can you give me a TLDR?" With this setting, I need to do that much less often. I think it's a good default for most people - and if you need more details about certain things, you can just ask follow-up questions.
+
+It only affects the visible response text, not the thinking, so you're not losing any reasoning quality.
 
 ---
 
